@@ -1,0 +1,2 @@
+cluster.name: elasticsearch
+path.home: c:\development\servers\elasticsearch-2.1.1
