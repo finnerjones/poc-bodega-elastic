@@ -1,10 +1,8 @@
 package com.finnerjones.es.bodega;
 
 import org.elasticsearch.action.search.SearchResponse;
-import org.elasticsearch.index.query.QueryBuilder;
 import org.elasticsearch.index.query.QueryBuilders;
 import org.elasticsearch.search.SearchHit;
-import org.elasticsearch.search.SearchHitField;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -32,7 +30,7 @@ public class EsBodegaNodeClientTest {
     }
 
     @Test
-    public void nodeShutdown() {
+    public void nodeClientShutdown() {
         Assert.assertTrue(nodeClient.shutdown());
         Assert.assertFalse(nodeClient.isRunning());
     }
